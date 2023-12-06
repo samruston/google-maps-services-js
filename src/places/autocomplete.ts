@@ -135,7 +135,7 @@ export interface PlaceAutocompleteResult {
    * is a textual identifier that uniquely identifies a place.
    * To retrieve information about the place, pass this identifier in the `placeId` field of a Places API request.
    */
-  place_id: string;
+  place_id?: string;
   /**
    * contains an array of terms identifying each section of the returned description
    * (a section of the description is generally terminated with a comma).
@@ -145,7 +145,7 @@ export interface PlaceAutocompleteResult {
    * contains an array of types that apply to this place.
    * For example: `[ "political", "locality" ]` or `[ "establishment", "geocode" ]`.
    */
-  types: AddressType[];
+  types?: AddressType[];
   /**
    * contains an array with `offset` value and `length`. These describe the location of
    * the entered term in the prediction result text, so that the term can be highlighted if desired.
